@@ -1,8 +1,9 @@
-//your JS code here. If required.
-//your JS code here. If required.
-function getSize(){
-    var w = window.innerWidth;
-	var h = window.innerHeight;
+const width = document.getElementById('width');
+const height = document.getElementById('height');
 
-	document.getElementById("sizeInfo").innerHTML="<h1> width: "+w+" and height: "+h+"</h1"
+function updateSize(){
+	height.textContent = window.innerHeight;
+	width.textContent = window.innerWidth;
 }
+
+window.addEventListener('resize', updateSize);
